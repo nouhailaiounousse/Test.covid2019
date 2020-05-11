@@ -1,0 +1,237 @@
+@import 'var.scss';
+
+* {
+    list-style-type: none;
+    :lang(fr) [data-fr] { display: block }
+
+    :lang(fr) [data-ar] { display: none; }
+
+    :lang(ar) [data-ar] {   display: block;   direction: rtl;}
+
+    :lang(ar) [data-fr] { display: none;}
+}
+
+.header {
+    &__nav {
+        padding: 0 2em;
+        background: url("../../../Design/Assets/png/Merged_bar-3@2x.png");
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        img {
+            width: 4em;
+
+        }
+        
+    }
+
+    &__menu {
+       
+
+        
+            background: url("../../../Design/Assets/png/Merged\ bar-1.png") no-repeat;
+            @include flexBox;
+            img{
+                width: 50px;
+                margin-top: 5px;
+                margin-left: 15px;
+                height: 60px;
+                @media (max-width:700px) {
+                    height: 55px;
+                }
+                @media (max-width:375px) {
+                    height: 50px;
+                }
+    
+            }
+            ul{
+                display: flex;
+                margin-right: 30px;
+                @media (max-width:700px) {
+                    margin-right: 15px;
+                }
+                li{
+                    padding: 5px;
+                    a.active
+                        {
+                            color: $color1;
+                        }
+                    a{
+                        padding: 8px;
+                        font-size: 22px;
+                        color: $blackColor;
+                        @media (max-width:700px) {
+                            font-size: 14px;
+                        }
+                        &:focus {
+                            color: $color1;
+                        
+                        }
+                    }
+                    button{
+                        padding: 8px;
+                        font-size: 22px;
+                        color: $blackColor;
+                        cursor: pointer;
+                        background-color: rgba(255, 255, 255, 0);
+                        @media (max-width:700px) {
+                            font-size: 14px;
+                        }
+                        &:focus {
+                            color: $color1;
+                        }
+    
+                    }
+                    .arabic{
+                        @include button;
+                        @media (max-width:375px) {
+                            font-size: 10px;
+                        }
+    
+                    }
+                }
+            }
+        
+    }
+
+    &__text {
+        background: url("../../../Design/Assets/png/En\ chiffres-24.png");
+        text-align: center;
+        line-height: 2.5;
+    }
+
+    &__title {
+        font-weight: bolder;
+        font-size: 1.5em;
+
+    }
+
+    &__parag {
+        width: 50%;
+        font-weight: bold;
+        font-size: 0.9em;
+        margin: 0 auto;
+        color: $btn_color;
+
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .header {
+        &__menu {
+            a {
+                margin-right: 0.5em;
+                font-size: 0.7em;
+
+                &:nth-child(3) {
+                    border: 1.5px solid black;
+                    padding: 0.5em 0.6em;
+                }
+
+                .fas {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        &__title {
+            font-size: 1em;
+        }
+
+        &__parag {
+            width: 70%;
+            font-size: 0.7em;
+        }
+    }
+}
+
+
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 3em;
+    font-weight: bold;
+
+    &__img {
+        width: 46%;
+        height: 25em;
+    }
+
+    &__text {
+        padding-top: 2em;
+        font-size: 0.6em;
+
+
+        img {
+            width: 3.5em;
+            margin-left: 45%;
+        }
+
+
+    }
+
+    &__btn {
+        margin-top: 1em;
+        background-color: $btn_color;
+        padding: 0.4em 14em;
+        border-radius: 10px;
+        cursor: pointer;
+
+        a {
+            color: white;
+            font-size: 1.2em;
+
+        }
+
+    }
+
+    &__parag {
+        text-align: center;
+        line-height: 1.8;
+        font-size: 2.3em;
+        color: $color2;
+
+        &--color {
+            color: $btn_color;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            width: 100%;
+            height: 12em;
+        }
+
+        &__parag {
+            font-size: 1.5em;
+
+            &--color {
+                font-size: 1.5em;
+            }
+        }
+
+        &__text {
+            img {
+                width: 2em;
+                margin-left: 43%;
+                padding: 0.2em;
+            }
+        }
+
+        &__btn {
+            padding: 0.2em 0.6em;
+            text-align: center;
+        }
+    }
+}

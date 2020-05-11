@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseils</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontawsome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700,900&display=swap&subset=arabic">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <!-- ---------NAV-------- -->
+    <header class="header">
+
+
+        <div class="header__menu">
+            <img src="./Design/Assets/png/logo__sante-48.png" alt=" " title="Ministère logo">
+            <nav data-fr>
+                <ul>
+                    <li><a href="./Starter-file/dist/conseils.html">conseil</a></li>
+                    <li><a href="../../../index.html">Accueil</a></li>
+                    <li><button class="arabic button1">عربي <i class="fas fa-globe"></i></button></li>
+                </ul>
+            </nav>
+            <nav data-ar>
+                <ul>
+                    <li><button class="arabic button1">FRN <i class="fas fa-globe"></i></button></li>
+                    <li><a href="Conseil.html">النصائح</a></li>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!-- --------- END NAV-------- -->
+
+
+
+    <!-- ---------ERROR MSG-------- -->
+    <section class="error">
+        <img src="../../Design/Assets/png/404.png" alt="img error" class="error__img">
+        <h1 class="error__msg">Tu es perdu</h1>
+        <button class="error__btn"><a href="../../index.html" class="error__btn--link">retourner à
+                l'accueil</a></button>
+    </section>
+
+
+
+    <!-- ---------END ERROR MSG-------- -->
+
+
+
+    <!-- ---------footer-------- -->
+    <section class="footer">
+
+        <img src="../../Design/Assets/png/logo__sante-48.png" alt="" class="footer__img">
+        <div class="footer__contain">
+            <div class="footer__col1">
+                <ul>
+                    <li class="footer__col11">عربي &nbsp;&nbsp;<i class="fas fa-globe"></i> </li>
+                    <li class="footer__col22"><a href="../../index.html">Accueil</a></li>
+                    <li class="footer__col33"><a href="./conseils.html">Conseil</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer__contain--middle">
+                <ul>
+                    <li>
+                        <h2>Contacts utiles</h2>
+                    </li>
+                    <li>
+                        <p>Chiffre économique "Alo épidémie vigilance"</p>
+                    </li>
+                    <li>
+                        <h4>080 100 47 47</h4>
+                    </li>
+                    <li>
+                        <p>Aide médicale urgente</p>
+                    </li>
+                    <li>
+                        <h4>141</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="footer__contain--text">Algorithme d'orientation mis à jour sur les recommandations en vigueur
+                au 22/03/2020 à 16h15. Ce site d’information n’est pas un dispositif médical,
+                il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance
+                Digitale contre le COVID-19 : @maladiecovid19</p>
+
+        </div>
+    </section>
+    <!-- ---------END footer-------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $('.button1').click(function () {
+            var lang = $('html').attr('lang');
+            if (lang == 'fr') $('html').attr('lang', 'ar');
+            if (lang == 'ar') $('html').attr('lang', 'fr');
+
+        });
+    </script>
+
+</body>
+
+</html>

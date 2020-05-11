@@ -1,0 +1,198 @@
+// ----------------------------------------------------------------------------------------------
+
+.recommandation {
+    background-color: $color1;
+    padding-bottom: 30px;
+
+
+    .container {
+        max-width: 85%;
+        margin: 0 auto;
+
+    }
+
+    h2 {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1.9rem;
+        letter-spacing: 0;
+        color: #fff;
+        margin-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    &__row {
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__appel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h5 {
+            color: $goldColor;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        span {
+            background-color: $goldColor;
+            width: 200px;
+            text-align: center;
+            color: $btn_color;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+
+        }
+
+        p {
+            font-size: 23px;
+            color: white;
+            border-bottom: 3px solid $goldColor;
+        }
+
+    }
+
+
+    &__list {
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            padding-left: 1.5em;
+        }
+
+        li {
+            font-size: 19px;
+            font-weight: 500;
+            color: #fff;
+            padding-bottom: 10px;
+            list-style: none;
+            display: block;
+            padding-left: 1.5em;
+            line-height: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .recommandation {
+        .container {
+            max-width: 100%;
+            margin-left: 2em;
+
+        }
+
+        h2 {
+            margin-right: 2em;
+            font-size: 1.2rem;
+        }
+
+        &__row {
+            max-width: 86%;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        &__list {
+            justify-content: center;
+
+            p {
+                font-size: 1em;
+            }
+
+            li {
+                font-size: 0.7em;
+                line-height: 20px;
+            }
+        }
+
+        &__appel {
+            margin-left: 1.5em;
+
+            h5 {
+                color: $goldColor;
+                font-size: 1.1em;
+            }
+
+            span {
+                width: 150px;
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+        }
+    }
+}
+
+// -----------------------------------------------------------------Test---------------------------------------------------------
+
+.test {
+    background-color: #96C5DC;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+
+    &__title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        color: #1078AD;
+        padding-top: 1em;
+    }
+
+    &__emotic {
+        max-width: 50px;
+        margin-left: 45%;
+        padding-top: 1em;
+
+    }
+
+    &__btn {
+        background-color: $color1;
+        width: 30vw;
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        border: 2px solid $color1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 35%;
+        margin-top: 1em;
+        cursor: pointer;
+
+    }
+}
+
+@media screen and (max-width:400px) {
+    .test {
+        &__title {
+            font-size: 0.6em;
+        }
+
+        &__emotic {
+            max-width: 30px;
+        }
+
+        &__btn {
+            width: 16em;
+            font-size: 1em;
+            margin-left: 15%;
+        }
+    }
+}

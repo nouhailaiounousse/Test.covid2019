@@ -1,0 +1,21 @@
+@import 'header.scss';
+@import 'test.scss';
+@import 'error.scss';
+@import 'proteger.scss';
+@import 'informations.scss';
+@import 'symptomes.scss';
+@import 'transmet.scss';
+@import 'recom&test.scss';
+@import 'footer.scss';
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Cairo',
+        "sans-serif";
+}
